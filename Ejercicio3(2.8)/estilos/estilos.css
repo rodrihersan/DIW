@@ -1,0 +1,32 @@
+/*body{
+    background-color: gainsboro;
+}*/
+header{
+    background-color: rgba(204, 204, 204, 0.877);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;   
+}
+header h2{
+    margin-left: 30px;
+}
+form{
+    margin-right: 30px;
+    margin-top: 20px;
+}
+
+nav{
+    background-color: rgba(0, 0, 0, 0.788);
+    width: 100%;
+    overflow: hidden;
+}
+nav li{
+    display: inline-block;
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+nav li a{
+    color: aliceblue;
+    text-decoration: none;
+}
