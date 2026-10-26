@@ -1,9 +1,281 @@
+*{
+    font-family: "DM Sans", sans-serif; 
+}
 /* BODY */
-
+body {
+    margin: 0;
+    background-color: #ffffff;
+    color: #111111;
+    padding-top: 135px;
+    padding-bottom: 85px;
+}
 
 /* HEADER */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 135px;
+    background-color: #1f2a48;
+    z-index: 10;
+}
 
+#headerSuperior {
+    height: 95px;
+    padding: 8px 25px 7px 25px;
+}
+
+#headerSuperior img {
+    display: inline-block;
+    height: 80px;
+    vertical-align: middle;
+}
+
+#linksHeader {
+    display: inline-block;
+    width: 74%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#linksHeader a {
+    margin: 0 8px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+#linksHeader a:hover {
+    text-decoration: underline;
+}
+
+.iconoCarrito, .iconoFavs, .iconoUser {
+    width: 26px;
+    height: 26px;
+    border: none;
+    border-radius: 50%;
+    background-color: #ffffff;
+    font-size: 13px;
+    cursor: pointer;
+    padding: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#headerInferior {
+    position: relative;
+    height: 40px;
+    padding: 0 18px;
+}
+
+#headerInferior input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 26px;
+    padding: 0 40px 0 25px;
+    border: none;
+    border-radius: 6px;
+    background-color: #e6e6e6;
+    font-size: 14px;
+}
+
+.buscadorBorrar {
+    position: absolute;
+    top: 4px;
+    right: 24px;
+    width: 18px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: #777777;
+    color: #ffffff;
+    font-size: 10px;
+    cursor: pointer;
+}
 
 /* ASIDE LATERAL IZQUIERDO */
+#filtrosLateralIzq {
+    position: fixed;
+    top: 135px;
+    bottom: 85px;
+    left: 4px;
+    width: 172px;
+    background-color: #ffffff;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
 
-/* NAV 
+#buscadorAside {
+    margin-top: 8px;
+    margin-left: 10px;
+    padding: 0px 17px 10px 0;
+}
+
+#buscadorAside input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 6px 8px;
+    border: 1px solid #bbbbbb;
+    border-radius: 8px;
+    font-size: 12px;
+}
+
+#listaFiltros {
+    position: absolute;
+    top: 50px;
+    bottom: 55px;
+    left: 0;
+    width: 100%;
+    overflow-y: auto;
+    padding: 0 6px;
+    box-sizing: border-box;
+}
+
+#listaFiltros h3 {
+    margin: 8px 0 2px 0;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+#listaFiltros label {
+    display: block;
+    padding: 6px 0 6px 6px;
+    font-size: 12px;
+    color: #444444;
+    cursor: pointer;
+}
+
+#listaFiltros input {
+    margin: 0 10px 0 0;
+    vertical-align: middle;
+    accent-color: #0b3dff;
+}
+
+#botonAplicar_Borrar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 8px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+.btn-aplicar {
+    width: 76px;
+    padding: 8px 0;
+    border: none;
+    border-radius: 6px;
+    background-color: #003AFA;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.btn-limpiar {
+    padding: 8px 10px;
+    border: none;
+    background: none;
+    color: #000000;
+    font-size: 12px;
+    cursor: pointer;
+}
+/* MAIN */
+
+main {
+    margin-left: 197px;
+    margin-right: 25px;
+    padding-top: 20px;
+}
+
+
+/* PÁGINAS */
+.paginacion {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.paginacion button {
+    width: 30px;
+    height: 28px;
+    border: 1px solid #333333;
+    background-color: #ffffff;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.paginacion .pagNum {
+    width: 18px;
+    height: 18px;
+    font-size: 9px;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 85px;
+    box-sizing: border-box;
+    padding: 8px 130px;
+    background-color: #1f2a48;
+    color: #ffffff;
+    z-index: 10;
+}
+#infoEmpresa,
+#linksFooter,
+#compañiaFooter,
+#RecursosFooter {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+}
+
+#infoEmpresa {
+    width: 28%;
+}
+
+footer h2 {
+    margin: 0 0 4px 0;
+    font-size: 18px;
+}
+
+footer h3 {
+    margin: 0 0 6px 0;
+    font-size: 13px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+footer a {
+    display: block;
+    margin-bottom: 6px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 11px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
