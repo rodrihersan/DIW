@@ -3,26 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Inicio - Futura</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="../img/logoConFondo.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Página Inicio - Futura</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/logoConFondo.png">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./estilos/principal.css">
 </head>
 <body>
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
     <header>
         <div id="headerSuperior">
-          <a href="#">
-            <img src="../img/logoConFondo.png" alt="logoFutura">
-          </a>
+          <h1>
+            <a href="#">
+              <img src="./img/logoConFondo.png" alt="Logo de Futura">
+            </a>
+          </h1>
 
-            <nav id="linksHeader">
+            <nav id="linksHeader" aria-label="Principal"> <!-- se usa debido a que hay dos nav. Así se identifica-->
                 <a href="#">INICIO</a>
-                <a href="../src/vehiculosEspaciales.html">VEHÍCULOS ESPACIALES</a>
-                <a href="../src/protesisYNeocuerpos.html">PRÓTESIS Y NEOCUERPOS</a>
-                <a href="../src/habitatsYModulos.html">HÁBITATS Y MÓDULOS</a>
-                <a href="../src/misProductos.html">MIS PRODUCTOS</a>
+                <a href="./src/vehiculosEspaciales.html">VEHÍCULOS ESPACIALES</a>
+                <a href="./src/protesisYNeocuerpos.html">PRÓTESIS Y NEOCUERPOS</a>
+                <a href="./src/habitatsYModulos.html">HÁBITATS Y MÓDULOS</a>
+                <a href="./src/misProductos.html">MIS PRODUCTOS</a>
             </nav>
 
             <button class="iconoCarrito" aria-label="Carrito">🛒</button>
@@ -32,256 +33,239 @@
             
         <div id="headerInferior">
             <input type="text" id="buscador" placeholder="Buscar">
-            <button class="buscadorBorrar">✕</button>
+            <button class="buscadorBorrar" aria-label="Borrar búsqueda">✕</button>
         </div>
-
     </header>
 
-    <main>
-        <aside id="filtrosLateralIzq">
-            <div id="buscadorAside">
-                <input type="text" placeholder="Buscar">
-            </div>
+    <aside id="filtrosLateralIzq" aria-label="Filtros">
+        <div id="buscadorAside">
+            <input type="text" placeholder="Buscar">
+        </div>
 
-            <div id="listaFiltros">
-                <h3>Tecnología</h3>
-                <label><input type="checkbox"> Inteligencia artificial</label>
-                <label><input type="checkbox"> Autorreparación</label>
-                <label><input type="checkbox"> Tecnología cuántica</label>
-                <label><input type="checkbox"> Nanotecnología</label>
-                <label><input type="checkbox"> Teletransporte</label>
-                <label><input type="checkbox"> Manipulación del tiempo</label>
+        <div id="listaFiltros">
+            <h2>Tecnología</h2>
+            <label><input type="checkbox"> Inteligencia artificial</label>
+            <label><input type="checkbox"> Autorreparación</label>
+            <label><input type="checkbox"> Tecnología cuántica</label>
+            <label><input type="checkbox"> Nanotecnología</label>
+            <label><input type="checkbox"> Teletransporte</label>
+            <label><input type="checkbox"> Manipulación del tiempo</label>
 
-                <h3>Procedencia</h3>
-                <label><input type="checkbox"> Tierra</label>
-                <label><input type="checkbox"> Luna</label>
-                <label><input type="checkbox"> Marte</label>
-                <label><input type="checkbox"> Estación espacial</label>
-                <label><input type="checkbox"> Planeta extraterrestre</label>
+            <h2>Procedencia</h2>
+            <label><input type="checkbox"> Tierra</label>
+            <label><input type="checkbox"> Luna</label>
+            <label><input type="checkbox"> Marte</label>
+            <label><input type="checkbox"> Estación espacial</label>
+            <label><input type="checkbox"> Planeta extraterrestre</label>
 
-                <h3>Nivel de peligrosidad</h3>
-                <label><input type="checkbox"> Inofensivo</label>
-                <label><input type="checkbox"> Potencialmente peligroso</label>
-                <label><input type="checkbox"> Puede alterar el ADN</label>
-                <label><input type="checkbox"> Potencialmente letal</label>
-                <label><input type="checkbox"> Riesgo interdimensional</label>
+            <h2>Nivel de peligrosidad</h2>
+            <label><input type="checkbox"> Inofensivo</label>
+            <label><input type="checkbox"> Potencialmente peligroso</label>
+            <label><input type="checkbox"> Puede alterar el ADN</label>
+            <label><input type="checkbox"> Potencialmente letal</label>
+            <label><input type="checkbox"> Riesgo interdimensional</label>
 
-                <h3>Tecnología</h3>
-                <label><input type="checkbox"> Inteligencia artificial</label>
-                <label><input type="checkbox"> Autorreparación</label>
-                <label><input type="checkbox"> Tecnología cuántica</label>
-                <label><input type="checkbox"> Nanotecnología</label>
-                <label><input type="checkbox"> Teletransporte</label>
-                <label><input type="checkbox"> Manipulación del tiempo</label>
+            <h2>Tecnología</h2>
+            <label><input type="checkbox"> Inteligencia artificial</label>
+            <label><input type="checkbox"> Autorreparación</label>
+            <label><input type="checkbox"> Tecnología cuántica</label>
+            <label><input type="checkbox"> Nanotecnología</label>
+            <label><input type="checkbox"> Teletransporte</label>
+            <label><input type="checkbox"> Manipulación del tiempo</label>
 
-                <h3>Tecnología</h3>
-                <label><input type="checkbox"> Inteligencia artificial</label>
-                <label><input type="checkbox"> Autorreparación</label>
-                <label><input type="checkbox"> Tecnología cuántica</label>
-                <label><input type="checkbox"> Nanotecnología</label>
-                <label><input type="checkbox"> Teletransporte</label>
-                <label><input type="checkbox"> Manipulación del tiempo</label>
+            <h2>Tecnología</h2>
+            <label><input type="checkbox"> Inteligencia artificial</label>
+            <label><input type="checkbox"> Autorreparación</label>
+            <label><input type="checkbox"> Tecnología cuántica</label>
+            <label><input type="checkbox"> Nanotecnología</label>
+            <label><input type="checkbox"> Teletransporte</label>
+            <label><input type="checkbox"> Manipulación del tiempo</label>
 
-                <h3>Tecnología</h3>
-                <label><input type="checkbox"> Inteligencia artificial</label>
-                <label><input type="checkbox"> Autorreparación</label>
-                <label><input type="checkbox"> Tecnología cuántica</label>
-                <label><input type="checkbox"> Nanotecnología</label>
-                <label><input type="checkbox"> Teletransporte</label>
-                <label><input type="checkbox"> Manipulación del tiempo</label>
-            </div>
+            <h2>Tecnología</h2>
+            <label><input type="checkbox"> Inteligencia artificial</label>
+            <label><input type="checkbox"> Autorreparación</label>
+            <label><input type="checkbox"> Tecnología cuántica</label>
+            <label><input type="checkbox"> Nanotecnología</label>
+            <label><input type="checkbox"> Teletransporte</label>
+            <label><input type="checkbox"> Manipulación del tiempo</label>
+        </div>
 
-            <div id="botonAplicar_Borrar">
-                <button class="btn-aplicar">Aplicar</button>
-                <button class="btn-limpiar">Limpiar</button>
-            </div>
-        </aside>
+        <div id="botonAplicar_Borrar">
+            <button class="btn-aplicar">Aplicar</button>
+            <button class="btn-limpiar">Limpiar</button>
+        </div>
+    </aside>
 
-        <nav class="paginacion">
-          <!--símbolo < -->
-          <button>&lt;</button>
-          <button class="pag-num">1</button>
-          <button class="pag-num">2</button>
-          <button class="pag-num">3</button>
-          <button class="pag-num">…</button>
-          <!--símbolo > -->
-          <button>&gt;</button>
+     <main id="contenido" tabindex="-1">
+        <nav class="paginacion" aria-label="Paginación de productos">
+            <button aria-label="Página anterior">&lt;</button>
+            <button class="pag-num" aria-current="page" aria-label="Página 1">1</button>
+            <button class="pag-num" aria-label="Página 2">2</button>
+            <button class="pag-num" aria-label="Página 3">3</button>
+            <button class="pag-num" aria-label="Más páginas">…</button>
+            <button aria-label="Página siguiente">&gt;</button>
         </nav>
 
-      <section class="rejilla">
+        <section class="rejilla" aria-label="Productos">
 
-        <!-- Tarjeta de producto 1 -->
-        <article class="tarjeta">
-          <img src="./img/exoesqueleto.jpg" alt="Exoesqueleto">
+            <article class="tarjeta">
+                <img src="./img/exoesqueleto.jpg" alt="Exoesqueleto Titan-V4 de elevación asistida">
+                <div class="tarjeta__cuerpo">
+                    <span class="vendedor">FluxBay</span>
+                    <h2>EXOESQUELETO V5.0/2300</h2>
+                    <p>Vendo armazón Titan-V4 en perfecto estado. Capacidad de elevación asistida de hasta 4,5 toneladas en entornos de gravedad 1G o gravedad ce... +</p>
+                    <div class="tarjeta__pie">
+                        <span class="estrellas"><span role="img" aria-label="4 de 5 estrellas">★★★★☆</span> <small>6.890</small></span>
+                        <strong>12.000€</strong>
+                    </div>
+                </div>
+            </article>
 
-          <div class="tarjeta__cuerpo">
-            <span class="vendedor">FluxBay</span>
-            <h4>EXOESQUELETO V5.0/2300</h4>
-            <p>Vendo armazón Titan-V4 en perfecto estado. Capacidad de elevación asistida de hasta 4,5 toneladas en entornos de gravedad 1G o gravedad ce... +</p>
-            <div class="tarjeta__pie">
-              <span class="estrellas">★★★★☆ <small>6.890</small></span>
-              <strong>12.000€</strong>
-            </div>
-          </div>
-        </article>
+            <article class="tarjeta">
+                <img src="./img/caza.jpeg" alt="Nave intergaláctica Hyperion Star-Cruiser">
+                <div class="tarjeta__cuerpo">
+                    <span class="vendedor">Zyra</span>
+                    <h2>NAVE INTERGALÁCTICA CRUD</h2>
+                    <p>Pongo a la venta mi Hyperion Star-Cruiser en impecable estado de conservación. Equipado con motor de curvatura de salto cuántico de Clase 4...+</p>
+                    <div class="tarjeta__pie">
+                        <span class="estrellas"><span role="img" aria-label="5 de 5 estrellas">★★★★★</span> <small>1.452</small></span>
+                        <strong>150.000€</strong>
+                    </div>
+                </div>
+            </article>
 
-        <!-- Tarjeta de producto 2 -->
-        <article class="tarjeta">
-          <img src="./img/caza.jpeg" alt="Nave intergaláctica">
-          <div class="tarjeta__cuerpo">
-            <span class="vendedor">Zyra</span>
-            <h4>NAVE INTERGALÁCTICA CRUD</h4>
-            <p>Pongo a la venta mi Hyperion Star-Cruiser en impecable estado de conservación. Equipado con motor de curvatura de salto cuántico de Clase 4...+</p>
-            <div class="tarjeta__pie">
-              <span class="estrellas">★★★★★ <small>1.452</small></span>
-              <strong>150.000€</strong>
-            </div>
-          </div>
-        </article>
+            <article class="tarjeta">
+                <img src="./img/robot.webp" alt="Robot pesado Mecha Vulcan con varios brazos">
+                <div class="tarjeta__cuerpo">
+                    <span class="vendedor">HyperLoot</span>
+                    <h2>MECHA VULCAN X-3000</h2>
+                    <p>Vendo unidad robótica pesada Vulcan-X en perfecto estado operativo. Chasis reforzado con titanio denso y articulaciones de servomotores mag... +</p>
+                    <div class="tarjeta__pie">
+                        <span class="estrellas"><span role="img" aria-label="3 de 5 estrellas">★★★☆☆</span> <small>540</small></span>
+                        <strong>10.000€</strong>
+                    </div>
+                </div>
+            </article>
 
-        <!-- Tarjeta de producto 3 -->
-        <article class="tarjeta">
-          <img src="./img/robot.webp" alt="Mecha Vulcan">
-          <div class="tarjeta__cuerpo">
-              <span class="vendedor">HyperLoot</span>
-              <h4>MECHA VULCAN X-3000</h4>
-              <p>Vendo unidad robótica pesada Vulcan-X en perfecto estado operativo. Chasis reforzado con titanio denso y articulaciones de servomotores mag... +
-              </p>
-            <div class="tarjeta__pie">
-              <span class="estrellas">★★★☆☆ <small>540</small></span>
-              <strong>10.000€</strong>
-            </div>
-          </div>
-        </article>
+            <article class="tarjeta">
+                <img src="./img/sillon.avif" alt="Sofá antigravitacional de diseño">
+                <div class="tarjeta__cuerpo">
+                    <span class="vendedor">NexusVault</span>
+                    <h2>SOFÁ ANTIGRAVITACIONAL</h2>
+                    <p>Sofá de diseño con levitación magnética, ergonómico y ajustable.</p>
+                    <div class="tarjeta__pie">
+                        <span class="estrellas"><span role="img" aria-label="4 de 5 estrellas">★★★★☆</span> <small>320</small></span>
+                        <strong>8.500€</strong>
+                    </div>
+                </div>
+            </article>
 
-        <!-- Tarjeta de producto 4 -->
-        <article class="tarjeta">
-          <img src="./img/sillon.avif" alt="Sofá antigravitacional">
-          <div class="tarjeta__cuerpo">
-            <span class="vendedor">NexusVault</span>
-            <h4>SOFÁ ANTIGRAVITACIONAL</h4>
-            <p>Sofá de diseño con levitación magnética, ergonómico y ajustable.</p>
-            <div class="tarjeta__pie">
-              <span class="estrellas">★★★★☆ <small>320</small></span>
-              <strong>8.500€</strong>
-            </div>
-          </div>
-        </article>
+            <article class="tarjeta">
+                <img src="./img/campsula.jpg" alt="Cápsula de teletransporte de corto alcance">
+                <div class="tarjeta__cuerpo">
+                    <span class="vendedor">BrainTester</span>
+                    <h2>MÁQUINA TELETRANSPORTA</h2>
+                    <p>Cápsula de teletransporte de corto alcance, revisada y calibrada.</p>
+                    <div class="tarjeta__pie">
+                        <span class="estrellas"><span role="img" aria-label="4 de 5 estrellas">★★★★☆</span> <small>210</small></span>
+                        <strong>45.000€</strong>
+                    </div>
+                </div>
+            </article>
 
-        <!-- Tarjeta de producto 5 -->
-        <article class="tarjeta">
-          <img src="./img/campsula.jpg" alt="Máquina teletransporta">
-          <div class="tarjeta__cuerpo">
-            <span class="vendedor">BrainTester</span>
-            <h4>MÁQUINA TELETRANSPORTA</h4>
-            <p>Cápsula de teletransporte de corto alcance, revisada y calibrada.</p>
-            <div class="tarjeta__pie">
-              <span class="estrellas">★★★★☆ <small>210</small></span>
-              <strong>45.000€</strong>
-            </div>
-          </div>
-        </article>
+            <article class="tarjeta">
+                <img src="./img/moto.jpg" alt="Moto voladora antigravedad biplaza">
+                <div class="tarjeta__cuerpo">
+                    <span class="vendedor">MixUnder</span>
+                    <h2>VEHÍCULO VOLADOR 2200</h2>
+                    <p>Moto antigravedad biplaza con turbinas de levitación.</p>
+                    <div class="tarjeta__pie">
+                        <span class="estrellas"><span role="img" aria-label="4 de 5 estrellas">★★★★☆</span> <small>980</small></span>
+                        <strong>22.000€</strong>
+                    </div>
+                </div>
+            </article>
 
-        <!-- Tarjeta de producto 6 -->
-        <article class="tarjeta">
-          <img src="./img/moto.jpg" alt="Vehículo volador">
-          <div class="tarjeta__cuerpo">
-            <span class="vendedor">MixUnder</span>
-            <h4>VEHÍCULO VOLADOR 2200</h4>
-            <p>Moto antigravedad biplaza con turbinas de levitación.</p>
-            <div class="tarjeta__pie">
-              <span class="estrellas">★★★★☆ <small>980</small></span>
-              <strong>22.000€</strong>
-            </div>
-          </div>
-        </article>
-        <article class="tarjeta">
-          <img src="./img/exoesqueleto.jpg" alt="Exoesqueleto">
+            <article class="tarjeta">
+                <img src="./img/exoesqueleto.jpg" alt="Exoesqueleto Titan-V4 de elevación asistida">
+                <div class="tarjeta__cuerpo">
+                    <span class="vendedor">FluxBay</span>
+                    <h2>EXOESQUELETO V5.0/2300</h2>
+                    <p>Vendo armazón Titan-V4 en perfecto estado. Capacidad de elevación asistida de hasta 4,5 toneladas en entornos de gravedad 1G o gravedad ce... +</p>
+                    <div class="tarjeta__pie">
+                        <span class="estrellas"><span role="img" aria-label="4 de 5 estrellas">★★★★☆</span> <small>6.890</small></span>
+                        <strong>12.000€</strong>
+                    </div>
+                </div>
+            </article>
 
-          <div class="tarjeta__cuerpo">
-            <span class="vendedor">FluxBay</span>
-            <h4>EXOESQUELETO V5.0/2300</h4>
-            <p>Vendo armazón Titan-V4 en perfecto estado. Capacidad de elevación asistida de hasta 4,5 toneladas en entornos de gravedad 1G o gravedad ce... +</p>
-            <div class="tarjeta__pie">
-              <span class="estrellas">★★★★☆ <small>6.890</small></span>
-              <strong>12.000€</strong>
-            </div>
-          </div>
-        </article>
+            <article class="tarjeta">
+                <img src="./img/caza.jpeg" alt="Nave intergaláctica Hyperion Star-Cruiser">
+                <div class="tarjeta__cuerpo">
+                    <span class="vendedor">Zyra</span>
+                    <h2>NAVE INTERGALÁCTICA CRUD</h2>
+                    <p>Pongo a la venta mi Hyperion Star-Cruiser en impecable estado de conservación. Equipado con motor de curvatura de salto cuántico de Clase 4...+</p>
+                    <div class="tarjeta__pie">
+                        <span class="estrellas"><span role="img" aria-label="5 de 5 estrellas">★★★★★</span> <small>1.452</small></span>
+                        <strong>150.000€</strong>
+                    </div>
+                </div>
+            </article>
 
-        <!-- Tarjeta de producto 2 -->
-        <article class="tarjeta">
-          <img src="./img/caza.jpeg" alt="Nave intergaláctica">
-          <div class="tarjeta__cuerpo">
-            <span class="vendedor">Zyra</span>
-            <h4>NAVE INTERGALÁCTICA CRUD</h4>
-            <p>Pongo a la venta mi Hyperion Star-Cruiser en impecable estado de conservación. Equipado con motor de curvatura de salto cuántico de Clase 4...</p>
-            <div class="tarjeta__pie">
-              <span class="estrellas">★★★★★ <small>1.452</small></span>
-              <strong>150.000€</strong>
-            </div>
-          </div>
-        </article>
+            <article class="tarjeta">
+                <img src="./img/robot.webp" alt="Robot pesado Mecha Vulcan con varios brazos">
+                <div class="tarjeta__cuerpo">
+                    <span class="vendedor">HyperLoot</span>
+                    <h2>MECHA VULCAN X-3000</h2>
+                    <p>Vendo unidad robótica pesada Vulcan-X en perfecto estado operativo. Chasis reforzado con titanio denso y articulaciones de servomotores mag... +</p>
+                    <div class="tarjeta__pie">
+                        <span class="estrellas"><span role="img" aria-label="3 de 5 estrellas">★★★☆☆</span> <small>540</small></span>
+                        <strong>10.000€</strong>
+                    </div>
+                </div>
+            </article>
 
-        <!-- Tarjeta de producto 3 -->
-        <article class="tarjeta">
-          <img src="./img/robot.webp" alt="Mecha Vulcan">
-          <div class="tarjeta__cuerpo">
-            <span class="vendedor">HyperLoot</span>
-            <h4>MECHA VULCAN X-3000</h4>
-            <p>Vendo unidad robótica pesada Vulcan-X en perfecto estado operativo. Chasis reforzado con titanio denso y articulaciones de servomotores mag... +</p>
-            <div class="tarjeta__pie">
-              <span class="estrellas">★★★☆☆ <small>540</small></span>
-              <strong>10.000€</strong>
-            </div>
-          </div>
-        </article>
+            <article class="tarjeta">
+                <img src="./img/sillon.avif" alt="Sofá antigravitacional de diseño">
+                <div class="tarjeta__cuerpo">
+                    <span class="vendedor">NexusVault</span>
+                    <h2>SOFÁ ANTIGRAVITACIONAL</h2>
+                    <p>Sofá de diseño con levitación magnética, ergonómico y ajustable.</p>
+                    <div class="tarjeta__pie">
+                        <span class="estrellas"><span role="img" aria-label="4 de 5 estrellas">★★★★☆</span> <small>320</small></span>
+                        <strong>8.500€</strong>
+                    </div>
+                </div>
+            </article>
 
-        <!-- Tarjeta de producto 4 -->
-        <article class="tarjeta">
-          <img src="./img/sillon.avif" alt="Sofá antigravitacional">
-          <div class="tarjeta__cuerpo">
-            <span class="vendedor">NexusVault</span>
-            <h4>SOFÁ ANTIGRAVITACIONAL</h4>
-            <p>Sofá de diseño con levitación magnética, ergonómico y ajustable.</p>
-            <div class="tarjeta__pie">
-              <span class="estrellas">★★★★☆ <small>320</small></span>
-              <strong>8.500€</strong>
-            </div>
-          </div>
-        </article>
+            <article class="tarjeta">
+                <img src="./img/campsula.jpg" alt="Cápsula de teletransporte de corto alcance">
+                <div class="tarjeta__cuerpo">
+                    <span class="vendedor">BrainTester</span>
+                    <h2>MÁQUINA TELETRANSPORTA</h2>
+                    <p>Cápsula de teletransporte de corto alcance, revisada y calibrada.</p>
+                    <div class="tarjeta__pie">
+                        <span class="estrellas"><span role="img" aria-label="4 de 5 estrellas">★★★★☆</span> <small>210</small></span>
+                        <strong>45.000€</strong>
+                    </div>
+                </div>
+            </article>
 
-        <!-- Tarjeta de producto 5 -->
-        <article class="tarjeta">
-          <img src="./img/campsula.jpg" alt="Máquina teletransporta">
-          <div class="tarjeta__cuerpo">
-            <span class="vendedor">BrainTester</span>
-            <h4>MÁQUINA TELETRANSPORTA</h4>
-            <p>Cápsula de teletransporte de corto alcance, revisada y calibrada.</p>
-            <div class="tarjeta__pie">
-              <span class="estrellas">★★★★☆ <small>210</small></span>
-              <strong>45.000€</strong>
-            </div>
-          </div>
-        </article>
+            <article class="tarjeta">
+                <img src="./img/moto.jpg" alt="Moto voladora antigravedad biplaza">
+                <div class="tarjeta__cuerpo">
+                    <span class="vendedor">MixUnder</span>
+                    <h2>VEHÍCULO VOLADOR 2200</h2>
+                    <p>Moto antigravedad biplaza con turbinas de levitación.</p>
+                    <div class="tarjeta__pie">
+                        <span class="estrellas"><span role="img" aria-label="4 de 5 estrellas">★★★★☆</span> <small>980</small></span>
+                        <strong>22.000€</strong>
+                    </div>
+                </div>
+            </article>
 
-        <!-- Tarjeta de producto 6 -->
-        <article class="tarjeta">
-          <img src="./img/moto.jpg" alt="Vehículo volador">
-          <div class="tarjeta__cuerpo">
-            <span class="vendedor">MixUnder</span>
-            <h4>VEHÍCULO VOLADOR 2200</h4>
-            <p>Moto antigravedad biplaza con turbinas de levitación.</p>
-            <div class="tarjeta__pie">
-              <span class="estrellas">★★★★☆ <small>980</small></span>
-              <strong>22.000€</strong>
-            </div>
-          </div>
-        </article>
-
-      </section>
+        </section>
     </main>
-
 
     <footer>
         <div id="infoEmpresa">
@@ -291,8 +275,8 @@
 
         <div id="linksFooter">
           <h3>Links</h3>
-          <a href="../src/vehiculosEspaciales.html">Vehículos espaciales</a>
-          <a href="../src/habitatsYModulos.html">Hábitats y módulos</a>
+          <a href="./src/vehiculosEspaciales.html">Vehículos espaciales</a>
+          <a href="./src/habitatsYModulos.html">Hábitats y módulos</a>
         </div>
 
         <div id="compañiaFooter">
