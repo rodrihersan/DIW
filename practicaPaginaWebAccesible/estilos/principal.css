@@ -8,6 +8,7 @@ body {
     color: #111111;
     padding-top: 135px;
     padding-bottom: 85px;
+    zoom: 125%;
 }
 
 /* HEADER */
@@ -17,12 +18,12 @@ header {
     left: 0;
     width: 100%;
     height: 135px;
-    background-color: #1f2a48;
+    background-color: #22283C;
     z-index: 10;
 }
 
 #headerSuperior {
-    height: 95px;
+    height: 85px;
     padding: 8px 25px 7px 25px;
 }
 
@@ -43,7 +44,6 @@ header {
     margin: 0 8px;
     color: #ffffff;
     text-decoration: none;
-    text-transform: uppercase;
     font-size: 13px;
 }
 
@@ -66,7 +66,6 @@ header {
 
 #headerInferior {
     position: relative;
-    height: 40px;
     padding: 0 18px;
 }
 
@@ -88,7 +87,7 @@ header {
     width: 18px;
     padding: 0;
     border-radius: 50%;
-    background-color: #777777;
+    background-color: #000000;
     color: #ffffff;
     font-size: 10px;
     cursor: pointer;
@@ -211,45 +210,100 @@ main {
     padding: 0;
 }
 
+.rejilla {
+    max-width: 780px;
+    margin: 0 auto;
+    text-align: center;
+}
 
+.tarjeta {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 180px;
+    height: 300px;
+    margin: 0 25px 30px 25px;
+    border: 1px solid #333333;
+    background-color: #22283C;
+    text-align: left;
+    color: white;
+}
 
+.tarjeta img {
+    display: block;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    background-color: #eeeeee;
+}
 
+.tarjeta__cuerpo {
+    padding: 12px 10px 10px 10px;
+}
 
+.vendedor {
+    font-size: 9px;
+}
 
+.tarjeta h4 {
+    margin: 6px 0;
+    font-size: 14px;
+    font-weight: 500;
+}
 
+.tarjeta p {
+    margin: 0;
+    font-size: 10px;
+    line-height: 1;
+    text-align: justify;
+}
 
+/* Parte de abajo de la tarjeta: estrellas a la izquierda y precio a la derecha */
+.tarjeta__pie {
+    display: inline-block;
+}
 
+.estrellas {
+    display: inline-block;
+    color: #EDB310;
+    font-size: 14px;
+    padding-right: 10px;
+}
 
+.estrellas small {
+    color: #999999;
+    font-size: 9px;
+}
 
+.tarjeta__pie strong {
+    display: inline-block;
+    font-size: 12px;
+}
 
-
-
-
-
+/*FOOTER*/
 
 footer {
     position: fixed;
     bottom: 0;
-    left: 0;
     width: 100%;
-    height: 85px;
-    box-sizing: border-box;
-    padding: 8px 130px;
+    height: 67px;
+    padding: 8px 0;          
     background-color: #1f2a48;
     color: #ffffff;
-    z-index: 10;
+    text-align: center;      
 }
-#infoEmpresa,
-#linksFooter,
-#compañiaFooter,
-#RecursosFooter {
+#linksFooter, #compañiaFooter, #RecursosFooter {
     display: inline-block;
     vertical-align: top;
     width: 20%;
+    text-align: left;
 }
 
 #infoEmpresa {
+    display: inline-block;
+    vertical-align: top;
     width: 28%;
+    text-align: left;
 }
 
 footer h2 {
