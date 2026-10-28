@@ -20,7 +20,7 @@
 
 /* FOCO VISIBLE */
 :focus-visible {
-    outline: 3px solid #000000;
+    outline: 3px solid #fae94c;
     outline-offset: 2px;
 }
 
