@@ -2,199 +2,238 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=ç, initial-scale=1.0">
-    <title>Spotify - Flexbox</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulse - Flexbox</title>
     <link rel="stylesheet" href="../css/principal.css">
 </head>
+
 <body>
-    <header>
-        <h1>PULSE</h1>
+    <header class="cabecera">
+        <a href="#" class="logo"><strong>Pulse</strong></a>
 
         <nav>
-            <ul>
+            <ul class="menu">
                 <li><a href="#">Inicio</a></li>
-                <li><a href="#">Explorar</a></li>
-                <li><a href="#">Canciones</a></li>
+                <li><a href="#artistas">Explorar</a></li>
+                <li><a href="#canciones">Canciones</a></li>
                 <li><a href="#">Premium</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        
+    <main class="contenido">
+
+        <!--Hero-->
         <section class="hero">
             <div class="hero-texto">
-                <h1>Toda tu música, en<br>un solo latido</h1>
+                <h1>Toda tu música, en un solo latido</h1>
                 <p>Descubre artistas nuevos, crea tus listas y escucha sin límites en cualquier dispositivo.</p>
-                <a href="#" class="btn-escuchar">Escuchar ahora</a>
+                <a href="#" class="boton"><strong>Escuchar ahora</strong></a>
+
             </div>
+            
             <div class="hero-imagen">
                 <img src="../img/goldenGate.jpg" alt="Puente en blanco y negro">
             </div>
         </section>
 
-        <section id="artistas">
-            <!--Tarjeta 1-->
-            <div class="tarjetaArtista">
-                <img src="" alt="">
-                <p><strong>Marianas Tech</strong></p>
-                <p>Symphonic Pop Rock</p>
-                <p>Pop rock orquestal y grandiosas armonías vocales</p>
-                <p>Seguir</p>
-            </div>
+        <!--Artistas-->
+        <section id="artistas" class="artistas">
+            <h2>Artistas populares</h2>
 
-            <!--Tarjeta 2-->
-            <div class="tarjetaArtista">
-                <img src="" alt="">
-                <p><strong>Marianas Tech</strong></p>
-                <p>Symphonic Pop Rock</p>
-                <p>Pop rock orquestal y grandiosas armonías vocales</p>
-                <p>Seguir</p>
-            </div>
+            <div class="artistas-lista">
 
-            <!--Tarjeta 3-->
-            <div class="tarjetaArtista">
-                <img src="" alt="">
-                <p><strong>Marianas Tech</strong></p>
-                <p>Symphonic Pop Rock</p>
-                <p>Pop rock orquestal y grandiosas armonías vocales</p>
-                <p>Seguir</p>
-            </div>
+                <!--1-->
+                <article class="artista">
+                    <img src="../img/goldenGate.jpg" alt="Foto de Marianas Trench">
+                    <h3>Marianas Trench</h3>
+                    <p class="artista-genero">Symphonic Pop Rock</p>
+                    <p class="artista-descripcion">Pop rock orquestal y grandiosas armonías vocales.</p>
+                    <button type="button" class="boton">Seguir</button>
+                </article>
 
-            <!--Tarjeta 4-->
-            <div class="tarjetaArtista">
-                <img src="" alt="">
-                <p><strong>Marianas Tech</strong></p>
-                <p>Symphonic Pop Rock</p>
-                <p>Pop rock orquestal y grandiosas armonías vocales</p>
-                <p>Seguir</p>
-            </div>
+                <!--2-->
+                <article class="artista">
+                    <img src="../img/goldenGate.jpg" alt="Foto de Siloé">
+                    <h3>Siloé</h3>
+                    <p class="artista-genero">Indie Pop / Electrónica</p>
+                    <p class="artista-descripcion">Fusión de guitarras acústicas y ritmos de baile.</p>
+                    <button type="button" class="boton">Seguir</button>
+                </article>
 
-            <!--Tarjeta 5-->
-            <div class="tarjetaArtista">
-                <img src="" alt="">
-                <p><strong>Marianas Tech</strong></p>
-                <p>Symphonic Pop Rock</p>
-                <p>Pop rock orquestal y grandiosas armonías vocales</p>
-                <p>Seguir</p>
-            </div>
+                <!--3-->
+                <article class="artista">
+                    <img src="../img/goldenGate.jpg" alt="Foto de TOMORROW X TOGETHER">
+                    <h3>TOMORROW X TOGETHER</h3>
+                    <p class="artista-genero">K-Pop / Alternative</p>
+                    <p class="artista-descripcion">Melodías conceptuales entre el pop y el rock.</p>
+                    <button type="button" class="boton">Seguir</button>
+                </article>
 
-            <!--Tarjeta 6-->
-            <div class="tarjetaArtista">
-                <img src="" alt="">
-                <p><strong>Marianas Tech</strong></p>
-                <p>Symphonic Pop Rock</p>
-                <p>Pop rock orquestal y grandiosas armonías vocales</p>
-                <p>Seguir</p>
-            </div>
+                <!--4-->
+                <article class="artista">
+                    <img src="../img/goldenGate.jpg" alt="Foto de YUQI">
+                    <h3>YUQI</h3>
+                    <p class="artista-genero">Pop / K-Pop</p>
+                    <p class="artista-descripcion">Voz rasgada única y vibrante pop con toque retro.</p>
+                    <button type="button" class="boton">Seguir</button>
+                </article>
 
-            <!--Tarjeta 7-->
-            <div class="tarjetaArtista">
-                <img src="" alt="">
-                <p><strong>Marianas Tech</strong></p>
-                <p>Symphonic Pop Rock</p>
-                <p>Pop rock orquestal y grandiosas armonías vocales</p>
-                <p>Seguir</p>
-            </div>
+                <!--5-->
+                <article class="artista">
+                    <img src="../img/goldenGate.jpg" alt="Foto de Måneskin">
+                    <h3>Måneskin</h3>
+                    <p class="artista-genero">Rock / Alternative</p>
+                    <p class="artista-descripcion">Rock moderno, actitud eléctrica y energía desbordante.</p>
+                    <button type="button" class="boton">Seguir</button>
+                </article>
 
-            <!--Tarjeta 8-->
-            <div class="tarjetaArtista">
-                <img src="" alt="">
-                <p><strong>Marianas Tech</strong></p>
-                <p>Symphonic Pop Rock</p>
-                <p>Pop rock orquestal y grandiosas armonías vocales</p>
-                <p>Seguir</p>
+                <!--6-->
+                <article class="artista">
+                    <img src="../img/goldenGate.jpg" alt="Foto de LATENCY">
+                    <h3>LATENCY</h3>
+                    <p class="artista-genero">Rock / Alternativo</p>
+                    <p class="artista-descripcion">Energía rockera vibrante y sonido instrumental directo.</p>
+                    <button type="button" class="boton">Seguir</button>
+                </article>
+
+                <!--7-->
+                <article class="artista">
+                    <img src="../img/goldenGate.jpg" alt="Foto de Samuraï">
+                    <h3>Samuraï</h3>
+                    <p class="artista-genero">Pop Rock</p>
+                    <p class="artista-descripcion">Pop-punk fresco y guitarras distorsionadas.</p>
+                    <button type="button" class="boton">Seguir</button>
+                </article>
+
+                <!--8-->
+                <article class="artista">
+                    <img src="../img/goldenGate.jpg" alt="Foto de Rolling Quartz">
+                    <h3>Rolling Quartz</h3>
+                    <p class="artista-genero">K-Rock / Hard Rock</p>
+                    <p class="artista-descripcion">Potente banda coreana de rock con energía desbordante.</p>
+                    <button type="button" class="boton">Seguir</button>
+                </article>
+
             </div>
         </section>
-        
-        <section id="listaCanciones">
 
-            <!--Canción 1-->
-            <div class="listaCanciones">
-                <p>1</p>
-                <img src="" alt="">
-                <p><strong>Lightning and Thunder</strong></p>
-                <p>Haven</p>
-                <p>4:02</p>
-            </div>
+        <!--Canciones-->
+        <section id="canciones" class="canciones">
+            <h2>Canciones del momento</h2>
 
-            <!--Canción 2-->
-            <div class="listaCanciones">
-                <p>1</p>
-                <img src="" alt="">
-                <p><strong>Lightning and Thunder</strong></p>
-                <p>Haven</p>
-                <p>4:02</p>
-            </div>
+            <ol class="canciones-lista">
+                <li class="cancion">
+                    <span class="cancion-numero">1</span>
+                    <img src="../img/goldenGate.jpg" alt="Portada de Haven">
+                    <div class="cancion-info">
+                        <h3>Lightning and Thunder</h3>
+                        <p>Marianas Trench</p>
+                    </div>
+                    <p class="cancion-album">Haven</p>
+                    <p class="cancion-duracion">4:02</p>
+                </li>
 
-            <!--Canción 3-->
-            <div class="listaCanciones">
-                <p>1</p>
-                <img src="" alt="">
-                <p><strong>Lightning and Thunder</strong></p>
-                <p>Haven</p>
-                <p>4:02</p>
-            </div>
+                <li class="cancion">
+                    <span class="cancion-numero">2</span>
+                    <img src="../img/goldenGate.jpg" alt="Portada de Santa Trinidad">
+                    <div class="cancion-info">
+                        <h3>Esa Estrella</h3>
+                        <p>Siloé</p>
+                    </div>
+                    <p class="cancion-album">Santa Trinidad</p>
+                    <p class="cancion-duracion">3:38</p>
+                </li>
 
-            <!--Canción 4-->
-            <div class="listaCanciones">
-                <p>1</p>
-                <img src="" alt="">
-                <p><strong>Lightning and Thunder</strong></p>
-                <p>Haven</p>
-                <p>4:02</p>
-            </div>
+                <li class="cancion">
+                    <span class="cancion-numero">3</span>
+                    <img src="../img/goldenGate.jpg" alt="Portada de The Name Chapter: FREEFALL">
+                    <div class="cancion-info">
+                        <h3>Chasing That Feeling</h3>
+                        <p>TOMORROW X TOGETHER</p>
+                    </div>
+                    <p class="cancion-album">The Name Chapter: FREEFALL</p>
+                    <p class="cancion-duracion">3:02</p>
+                </li>
 
-            <!--Canción 5-->
-            <div class="listaCanciones">
-                <p>1</p>
-                <img src="" alt="">
-                <p><strong>Lightning and Thunder</strong></p>
-                <p>Haven</p>
-                <p>4:02</p>
-            </div>
+                <li class="cancion">
+                    <span class="cancion-numero">4</span>
+                    <img src="../img/goldenGate.jpg" alt="Portada de LATE O' CLOCK">
+                    <div class="cancion-info">
+                        <h3>Latency</h3>
+                        <p>LATENCY</p>
+                    </div>
+                    <p class="cancion-album">LATE O' CLOCK</p>
+                    <p class="cancion-duracion">3:30</p>
+                </li>
 
-            <!--Canción 6-->
-            <div class="listaCanciones">
-                <p>1</p>
-                <img src="" alt="">
-                <p><strong>Lightning and Thunder</strong></p>
-                <p>Haven</p>
-                <p>4:02</p>
-            </div>
+                <li class="cancion">
+                    <span class="cancion-numero">5</span>
+                    <img src="../img/goldenGate.jpg" alt="Portada de 27">
+                    <div class="cancion-info">
+                        <h3>Stay</h3>
+                        <p>YUQI</p>
+                    </div>
+                    <p class="cancion-album">27</p>
+                    <p class="cancion-duracion">3:45</p>
+                </li>
 
-            <!--Canción 7-->
-            <div class="listaCanciones">
-                <p>1</p>
-                <img src="" alt="">
-                <p><strong>Lightning and Thunder</strong></p>
-                <p>Haven</p>
-                <p>4:02</p>
-            </div>
+                <li class="cancion">
+                    <span class="cancion-numero">6</span>
+                    <img src="../img/goldenGate.jpg" alt="Portada de Teatro d'ira: Vol. I">
+                    <div class="cancion-info">
+                        <h3>VENT'ANNI</h3>
+                        <p>Måneskin</p>
+                    </div>
+                    <p class="cancion-album">Teatro d'ira: Vol. I</p>
+                    <p class="cancion-duracion">4:13</p>
+                </li>
 
-            <!--Canción 8-->
-            <div class="listaCanciones">
-                <p>1</p>
-                <img src="" alt="">
-                <p><strong>Lightning and Thunder</strong></p>
-                <p>Haven</p>
-                <p>4:02</p>
-            </div>
+                <li class="cancion">
+                    <span class="cancion-numero">7</span>
+                    <img src="../img/goldenGate.jpg" alt="Portada de La Ironía del Querer">
+                    <div class="cancion-info">
+                        <h3>La Ironía Del Querer</h3>
+                        <p>Samuraï</p>
+                    </div>
+                    <p class="cancion-album">La Ironía del Querer</p>
+                    <p class="cancion-duracion">3:26</p>
+                </li>
+
+                <li class="cancion">
+                    <span class="cancion-numero">8</span>
+                    <img src="../img/goldenGate.jpg" alt="Portada de Roll the dice">
+                    <div class="cancion-info">
+                        <h3>My Turn</h3>
+                        <p>Rolling Quartz</p>
+                    </div>
+                    <p class="cancion-album">Roll the dice</p>
+                    <p class="cancion-duracion">2:56</p>
+                </li>
+            </ol>
         </section>
     </main>
 
-    <footer id="reproductor">
-        <img src="" alt="">
-        <p>Lightning and Thunder</p>
-        <p>Marianas Trech</p>
+    <!--Reproductor-->
+    <footer class="reproductor">
+        <div class="reproductor-cancion">
+            <img src="../img/goldenGate.jpg" alt="Portada de Haven">
+            <div class="reproductor-datos">
+                <p class="reproductor-titulo">Lightning and Thunder</p>
+                <p class="reproductor-artista">Marianas Trench</p>
+            </div>
+        </div>
 
-        <p>⏮</p>
-        <p>▶</p>
-        <p>⏭</p>
+        <div class="reproductor-controles">
+            <button type="button" class="control control-extra">⏮</button>
+            <button type="button" class="control control-play">▶</button>
+            <button type="button" class="control control-extra">⏭</button>
+        </div>
 
-        <p>🔉</p>
-
+        <div class="reproductor-volumen">
+            <span>🔉</span>
+            <input type="range" min="0" max="100" value="70">
+        </div>
     </footer>
-        
 </body>
 </html>
