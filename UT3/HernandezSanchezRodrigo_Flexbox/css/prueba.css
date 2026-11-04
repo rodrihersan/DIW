@@ -1,0 +1,15 @@
+:root{
+    --colorBotonVerde: rgb(70, 224, 118);
+    --colorH123: #fff;
+    --colorGrisTexto: rgb(83, 82, 84);
+}
+
+
+
+.cabecera{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
