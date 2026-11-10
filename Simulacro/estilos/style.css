@@ -1,0 +1,332 @@
+/* =========================================================
+   SIMULACRO · FLEXBOX
+   ---------------------------------------------------------
+   Cada ejercicio es un contenedor. El aspecto (colores,
+   tipografía, márgenes...) ya está hecho: tu trabajo es
+   escribir el LAYOUT con Flexbox donde pone
+   "TU CÓDIGO AQUÍ".
+
+   El CSS base es el de MÓVIL. Los bloques @media del final
+   son para ampliar el diseño en pantallas mayores (mobile-first).
+   ========================================================= */
+
+:root {
+    --hueco: 10px;   /* hueco entre elementos */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 1rem;
+    font-family: sans-serif;
+    background-color: #f8fafc;
+    color: #0f172a;
+}
+
+h1 {
+    margin: 0 0 1rem;
+}
+
+h2 {
+    margin: 2rem 0 0.75rem;
+    font-size: 1.1rem;
+}
+
+.subtitulo {
+    margin: 1rem 0 0.5rem;
+    font-weight: 700;
+}
+
+/* Contenedor de cada ejercicio (borde discontinuo para ver su tamaño) */
+.contenedor {
+    padding: var(--hueco);
+    border: 2px dashed #94a3b8;
+}
+
+/* Cajas (ya hechas) */
+.caja {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 3rem;
+    border-radius: 0.4rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+.caja:nth-child(1) { background-color: #0f766e; }
+.caja:nth-child(2) { background-color: #2563eb; }
+.caja:nth-child(3) { background-color: #d97706; }
+.caja:nth-child(4) { background-color: #be123c; }
+.caja:nth-child(5) { background-color: #7c3aed; }
+.caja:nth-child(6) { background-color: #475569; }
+.caja:nth-child(7) { background-color: #0f766e; }
+.caja:nth-child(8) { background-color: #2563eb; }
+
+/* ---------- EJERCICIO 1 ----------
+   Móvil: cajas una debajo de otra y centradas horizontalmente.
+   Desde 768px: en una fila, la primera pegada a la izquierda,
+   la última a la derecha, con el mismo espacio entre ellas y
+   centradas verticalmente. Hueco entre cajas: --hueco. */
+.ej1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 160px;
+}
+
+.ej1 .caja {
+    width: 80px;
+    margin-bottom: var(--hueco);
+}
+
+/* ---------- EJERCICIO 2 ----------
+   Cajas con --hueco entre ellas (horizontal y vertical).
+   Móvil: 1 por línea. Desde 600px: 2 por línea.
+   Desde 900px: 3 por línea. Si la última fila tiene menos
+   cajas, NO se estiran. */
+.ej2 {
+    /* TU CÓDIGO AQUÍ */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.ej2 .caja {
+    /* TU CÓDIGO AQUÍ */
+        margin-bottom: var(--hueco);
+
+}
+
+/* ---------- EJERCICIO 3 ----------
+   Siempre en una fila, con --hueco entre cajas.
+   La caja 1 (lateral) mide 120px fijos y no cambia nunca.
+   Las cajas 2 y 3 se reparten el espacio que queda:
+   la 2 (principal) ocupa el doble que la 3 (secundaria). */
+.ej3 {
+    /* TU CÓDIGO AQUÍ */
+    display: flex;
+    flex-direction: row;
+    gap: var(--hueco);
+}
+
+.ej3 .lateral {
+    /* TU CÓDIGO AQUÍ */
+    width: 120px;
+}
+
+.ej3 .principal {
+    /* TU CÓDIGO AQUÍ */
+    flex: 2;
+}
+
+.ej3 .secundaria {
+    /* TU CÓDIGO AQUÍ */
+    flex: 1;
+}
+
+/* ---------- EJERCICIO 4 ----------
+   Móvil: cajas una debajo de otra, con --hueco entre ellas,
+   pero la caja 3 (tercera) se ve la PRIMERA.
+   Desde 768px: en una fila y en su orden normal (1, 2, 3). */
+.ej4 {
+    /* TU CÓDIGO AQUÍ */
+    display: flex;
+    flex-direction: column;
+    gap: var(--hueco);
+}
+
+.ej4 .tercera {
+    /* TU CÓDIGO AQUÍ */
+    order: -1;
+}
+
+/* ---------- EJERCICIO 5 ---------- */
+/* 5.A: la caja centrada en el contenedor, horizontal y verticalmente */
+.ej5a {
+    height: 160px;
+    /* TU CÓDIGO AQUÍ */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 5.B: en una fila, repartidas con el mismo espacio entre ellas.
+   La caja 1 arriba del contenedor, la 2 en el centro y la 3 abajo. */
+.ej5b {
+    height: 220px;
+    /* TU CÓDIGO AQUÍ */
+    display: flex;
+    flex-direction: column;
+}
+
+.ej5a .caja,.ej5b .caja {
+    width: 60px;
+    height: 60px;
+    min-height: 0;
+}
+
+.ej5b .c1 {
+    /* TU CÓDIGO AQUÍ */
+    align-self: flex-start;
+}
+
+.ej5b .c2 {
+    /* TU CÓDIGO AQUÍ */
+    align-self: center;
+}
+
+.ej5b .c3 {
+    /* TU CÓDIGO AQUÍ */
+    align-self: flex-end;
+}
+
+/* ---------- EJERCICIO 6 ----------
+   Las dos fichas, una junto a otra, con --hueco entre ellas
+   y con el mismo ancho. Las dos tienen la misma altura.
+   En cada ficha:
+   - El título a la izquierda y la etiqueta a la derecha, en la misma línea.
+   - El botón "Ver más" queda pegado al fondo de la ficha aunque
+     los textos tengan distinta longitud, y NO se estira a todo el ancho. */
+.ej6 {
+    /* TU CÓDIGO AQUÍ */
+}
+
+.ej6 .ficha {
+    padding: 0.75rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 0.4rem;
+    background-color: #fff;
+    /* TU CÓDIGO AQUÍ */
+}
+
+.ej6 .cabecera {
+    /* TU CÓDIGO AQUÍ */
+}
+
+.ej6 .titulo {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.ej6 .etiqueta {
+    font-weight: 700;
+}
+
+.ej6 .ficha p {
+    margin: 0.5rem 0 0.75rem;
+    /* TU CÓDIGO AQUÍ */
+}
+
+.ej6 .boton {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.4rem;
+    background-color: #0f766e;
+    color: #fff;
+    cursor: pointer;
+    /* TU CÓDIGO AQUÍ */
+}
+
+/* ---------- EJERCICIO 7 ----------
+   En cada aviso, el icono a la izquierda y el texto a su derecha,
+   con --hueco entre ellos y centrados verticalmente entre sí.
+   El número queda centrado dentro del círculo.
+   El icono NUNCA se deforma, aunque el texto sea largo,
+   y el texto ocupa todo el espacio restante. */
+.ej7 .aviso {
+    margin-bottom: var(--hueco);
+    padding: 0.75rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 0.4rem;
+    background-color: #fff;
+    /* TU CÓDIGO AQUÍ */
+}
+
+.ej7 .icono {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    background-color: #2563eb;
+    color: #fff;
+    font-weight: 700;
+    /* TU CÓDIGO AQUÍ */
+}
+
+.ej7 .aviso p {
+    margin: 0;
+    /* TU CÓDIGO AQUÍ */
+}
+
+/* ---------- EJERCICIO 8 ----------
+   Esta mini página mide como mínimo 300px de alto.
+   Aunque haya poco contenido, el FOOTER debe quedar
+   al final del contenedor, sin hueco debajo.
+   No se puede usar position ni una altura fija en el footer. */
+.ej8 {
+    /* TU CÓDIGO AQUÍ */
+}
+
+.ej8 header,
+.ej8 footer {
+    padding: 0.75rem;
+    background-color: #334155;
+    color: #fff;
+    font-weight: 700;
+}
+
+.ej8 main {
+    padding: 0.75rem;
+    background-color: #e2e8f0;
+    /* TU CÓDIGO AQUÍ */
+}
+
+/* =========================================================
+   MEDIA QUERIES (mobile-first, usa min-width)
+   ========================================================= */
+
+/* ---------- 600px en adelante ---------- */
+@media (min-width: 600px) {
+    .ej2 .caja {
+        /* TU CÓDIGO AQUÍ */
+        flex-flow:column wrap;
+        align-items: center;
+           
+    }
+}
+
+/* ---------- 768px en adelante ---------- */
+@media (min-width: 768px) {
+    .ej1 {
+        /* TU CÓDIGO AQUÍ */
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .ej4 {
+        /* TU CÓDIGO AQUÍ */
+        flex-direction: row ;
+        flex-wrap: nowrap;
+    }
+
+    .ej4 .tercera {
+        /* TU CÓDIGO AQUÍ */
+    }
+
+    .ej4 .caja {
+       /* TU CÓDIGO AQUÍ */
+    }
+}
+
+/* ---------- 900px en adelante ---------- */
+@media (min-width: 900px) {
+    .ej2 .caja {
+        /* TU CÓDIGO AQUÍ */
+        flex-direction: row;
+    }
+}
